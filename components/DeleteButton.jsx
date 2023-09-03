@@ -9,7 +9,7 @@ export default function DeleteButton({id}) {
 
     const deletePost=async()=>{
         try{
-            const res= await fetch(`http://localhost:3000/api/mytopics?id=${id}`,{
+            const res= await fetch(`/api/mytopics?id=${id}`,{
                 method:"DELETE"
             })
             if(res.ok){

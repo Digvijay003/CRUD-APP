@@ -12,7 +12,7 @@ import { Heading } from '@chakra-ui/react'
 
 const getTopics=async ()=>{
     try{
-        const res=await fetch('http://localhost:3000/api/mytopics',{
+        const res=await fetch('/api/mytopics',{
             cache:"no-store"
         })
       

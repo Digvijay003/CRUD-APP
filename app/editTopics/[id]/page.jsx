@@ -4,8 +4,9 @@ import React  from 'react'
 import EditTopicsForm from '@/components/EditTopicsForm'
 
 const getTopicsById=async(id)=>{
+  const apiUrl=process.env.NEXTAUTH_URL
   try{
-    const res =await fetch(`http://localhost:3000/api/mytopics/${id}`,{
+    const res =await fetch(`${apiUrl}/api/mytopics/${id}`,{
       cache:'no-store'
     }) 
     if(!res.ok){
