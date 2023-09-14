@@ -20,7 +20,7 @@ export default function HomePage() {
                 <div>
              
             <Heading className='user-name'>Welcome,{session?.user?.name}</Heading>
-            <Heading size='sm'colorScheme='white'className='user-email'>{session?.user?.email}</Heading>
+            <Heading size='sm'colorScheme='white'className='user-email'>Email ID : {session?.user?.email}</Heading>
 
                 </div>
 
@@ -36,7 +36,7 @@ export default function HomePage() {
             <ChakraProvider>
             <div className='login-page'>
                 <Heading className='heading'>Log In </Heading>
-                <Button onClick={()=>signIn('google')}variant='outline'colorScheme='green'className='sign-in-button'>Sign In with Google</Button>
+                <Button onClick={()=>signIn('google')}variant='outline'colorScheme='green'className='sign-in-button'id='Sign In'>Sign In with Google</Button>
         
             </div>
             </ChakraProvider>

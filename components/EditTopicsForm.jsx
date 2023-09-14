@@ -38,7 +38,7 @@ export default function EditTopicsForm({id}) {
   <input id='title'value={newTitle}onChange={e=>setNewTitle(e.target.value)}/>
   <label htmlFor='details'>Description</label>
   <textarea id='details'onChange={e=>setNewDescription(e.target.value)}value={newDescription}></textarea>
-  <button type='submit'>UpDate</button>
+  <button type='submit'className='update-button'>UpDate</button>
   <button>Cancel</button>
   </form>
 
