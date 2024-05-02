@@ -15,7 +15,7 @@ Check out our [Next.js deployment documentation](https://nextjs.org/docs/deploym
 
 In this application you can create ,update,delete posts and retrieve data from Database also
 You have to connect with MongoDB with your own secret credentials and then create a cluster after login to your MongoDB account.
-I also add authentication using NextAuth.js with Google Provider , So you have to login first to access this application.
+I also add authentication using NextAuth.js with Google Provider , So you have to login first to access this application. Make sure you have a google account first.
 
 #### Prerequisities
 
